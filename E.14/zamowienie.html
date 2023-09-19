@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fabryka żelków</title>
+    <link rel="stylesheet" href="styl9.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img src="img/cukierki2.png" alt="logo fabryki"
+      /></a>
+      <a href="zamowienie.html" id="zamowienie">Zamówienie</a>
+      <div id="baner"><h2>Zamów nasz produkt</h2></div>
+    </header>
+    <main>
+      <h1>Oferta</h1>
+      <table>
+        <tr>
+          <th>Kształty</th>
+          <th>Kolory</th>
+        </tr>
+        <tr>
+          <td>
+            <ol>
+              <li>miś</li>
+              <li>żabka</li>
+              <li>serce</li>
+            </ol>
+          </td>
+          <td>
+            <ol>
+              <li>czerwony</li>
+              <li>niebieski</li>
+              <li>żółty</li>
+              <li>inny</li>
+            </ol>
+          </td>
+        </tr>
+      </table>
+      <label for="num_shape">
+        Podaj numer kształtu
+        <input type="number" id="num_shape" />
+      </label>
+      <label for="color">
+        skomponuj swój kolor, podaj RGB
+        <label for="red"> R<input type="number" id="red" /> </label>
+        <label for="green"> G<input type="number" id="green" /> </label>
+        <label for="blue"> B<input type="number" id="blue" /> </label>
+      </label>
+      <button type="submit">Zamów</button>
+      <p aria-placeholder="Wybrany kształt"></p>
+      <button>Wybrany kolor</button>
+      <footer>Autor strony: <i>12345678910</i></footer>
+    </main>
+  </body>
+</html>
