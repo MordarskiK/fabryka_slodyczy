@@ -1,10 +1,10 @@
 const BTN_zamow = document.getElementById("BTN_zamow");
 const num_shape = document.getElementById("num_shape");
+const zamowienie = document.getElementById("zamowienie");
+const BTN_color = document.getElementById("BTN_color");
 const red = document.getElementById("red");
 const green = document.getElementById("green");
 const blue = document.getElementById("blue");
-const zamowienie = document.getElementById("zamowienie");
-const BTN_color = document.getElementById("BTN_color");
 
 BTN_zamow.addEventListener("click", function (fun) {
   fun.preventDefault();
@@ -19,9 +19,7 @@ BTN_zamow.addEventListener("click", function (fun) {
   } else {
     zamowienie.innerHTML += "inny kształt";
   }
-});
 
-BTN_color.addEventListener("click", function (fun) {
-  fun.preventDefault();
-  BTN_color.style.color();
+  BTN_color.style.backgroundColor =
+    "rgb(" + red.value + "," + green.value + "," + blue.value + ")";
 });
